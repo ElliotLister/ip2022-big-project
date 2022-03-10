@@ -1,31 +1,33 @@
-/* Trees Image - Pexels: https://www.pexels.com/photo/photo-of-trees-in-forest-3801030/ */
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,800&display=swap');
 
 html {
   box-sizing: border-box;
 }
 
 :root {
-  --column-1: #a2622d;
-  --column-2: #1b6161;
-  --column-3: #248224;
-  --column-4: #a22d22;
+  --column-1: #615EBF;
+  --column-2: #0B438C;
+  --column-3: #0B2D59;
+  --column-4: #392359;
+  --column-5: #244673;
 }
 
 body {
   margin: 0;
-  background: url("./trees.jpg");
+  background: url("background.jpg");
   background-size: cover;
   background-position: 50% 60%;
   background-attachment: fixed;
   color: white;
-  font-family: Quicksand, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   overflow-y: hidden;
 }
 
 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px black;
+  font-weight: 700;
 }
 
 .main-title {
@@ -153,20 +155,22 @@ ul {
 }
 
 .add-btn {
-  margin: 10px;
+  margin: auto;
   padding: 5px 10px;
-  display: flex;
+  display: inline-block; 
+  line-height: 30px;
   align-items: center;
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
   border-radius: 5px;
-  transition: all 0.3s ease-in;
   user-select: none;
+  text-align: center;
 }
 
 .add-btn:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  background-color: rgba(84, 51, 130, 0.5);
+  color: white;
+  font-weight: 400;
 }
 
 .add-btn:active {
@@ -187,7 +191,7 @@ ul {
   font-size: 1.5rem;
   margin-right: 5px;
   position: relative;
-  top: -3px;
+  top: 3px;
 }
 
 .add-container {
