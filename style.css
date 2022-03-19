@@ -91,7 +91,7 @@ ul {
 /* Custom Scrollbar */
 .custom-scroll {
   overflow-y: auto;
-  max-height: 75vh;
+  max-height: calc(75vh - 50px) !important;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
@@ -174,7 +174,9 @@ ul {
 }
 
 .add-btn:active {
-  transform: scale(0.97);
+  font-size: 30%;
+  animation: bounce;
+  animation-duration: 2s;
 }
 
 .solid {
